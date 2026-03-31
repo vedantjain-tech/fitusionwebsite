@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen bg-black overflow-hidden">
 
       {/* ================= MOBILE LAYOUT ================= */}
-  <div className="md:hidden flex flex-col items-center text-center px-6 pt-16">
+      <div className="md:hidden flex flex-col items-center text-center px-6 pt-28">
 
   {/* TEXT */}
   <h1 className="font-bold leading-[1.1] tracking-tight text-[28px]">
