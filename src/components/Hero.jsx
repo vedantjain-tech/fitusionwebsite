@@ -4,45 +4,45 @@ import StatsCard from "./StatsCard";
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-black overflow-hidden">
+ {/* ================= MOBILE LAYOUT ================= */}
+  <div className="md:hidden flex flex-col items-center text-center px-6 pt-16">
 
-      {/* ================= MOBILE LAYOUT ================= */}
-      <div className="md:hidden flex flex-col items-center text-center px-6 pt-28">
+  {/* TEXT */}
+  <h1 className="font-bold leading-[1.1] tracking-tight text-[28px]">
+    <span className="text-[#d9ff00]">Sculpt</span>{" "}
+    <span className="text-gray-500">Your</span>{" "}
+    <span className="text-[#d9ff00]">Body,</span>
+    <br />
+    <span className="text-[#d9ff00]">Elevate</span>{" "}
+    <span className="text-gray-500">Your</span>{" "}
+    <span className="text-[#d9ff00]">Spirit</span>
+  </h1>
 
-        {/* TEXT */}
-        <h1 className="font-bold leading-[1.1] tracking-tight text-[32px]">
-          <span className="text-[#d9ff00]">Sculpt</span>{" "}
-          <span className="text-gray-500">Your</span>{" "}
-          <span className="text-[#d9ff00]">Body,</span>
-          <br />
-          <span className="text-[#d9ff00]">Elevate</span>{" "}
-          <span className="text-gray-500">Your</span>{" "}
-          <span className="text-[#d9ff00]">Spirit</span>
-        </h1>
+  {/* IMAGE (FORCED POSITION FIX) */}
+  <img
+    src="/hero.png"
+    alt="fitness"
+    className="w-55 mt-6 -translate-y-4"
+  />
 
-        {/* IMAGE */}
-        <img
-          src="/hero.png"
-          alt="fitness"
-          className="w-[260px] mt-10"
-        />
+  {/* CTA */}
+  <div className="mt-6">
+    <Button>Let's Start →</Button>
+  </div>
 
-        {/* CTA */}
-        <div className="mt-8">
-          <Button>Let's Start →</Button>
-        </div>
+  {/* USERS */}
+  <div className="mt-4 flex items-center gap-3">
+    <div className="flex -space-x-3">
+      <img src="https://randomuser.me/api/portraits/men/1.jpg" className="w-8 h-8 rounded-full border-2 border-black" />
+      <img src="https://randomuser.me/api/portraits/women/2.jpg" className="w-8 h-8 rounded-full border-2 border-black" />
+      <img src="https://randomuser.me/api/portraits/men/3.jpg" className="w-8 h-8 rounded-full border-2 border-black" />
+    </div>
+    <p className="text-xs text-gray-400">
+      <span className="text-white font-semibold">12k+</span> Happy Spirits
+    </p>
+  </div>
 
-        {/* USERS */}
-        <div className="mt-6 flex items-center gap-3">
-          <div className="flex -space-x-3">
-            <img src="https://randomuser.me/api/portraits/men/1.jpg" className="w-8 h-8 rounded-full border-2 border-black" />
-            <img src="https://randomuser.me/api/portraits/women/2.jpg" className="w-8 h-8 rounded-full border-2 border-black" />
-            <img src="https://randomuser.me/api/portraits/men/3.jpg" className="w-8 h-8 rounded-full border-2 border-black" />
-          </div>
-          <p className="text-xs text-gray-400">
-            <span className="text-white font-semibold">12k+</span> Happy Spirits
-          </p>
-        </div>
-      </div>
+</div>
 
       {/* ================= DESKTOP LAYOUT ================= */}
       <div className="hidden md:block">
